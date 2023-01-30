@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,6 +19,6 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE               := nvphsd.conf
 LOCAL_MODULE_CLASS         := ETC
-LOCAL_SRC_FILES            := nvphsd.foster.conf
+LOCAL_SRC_FILES            := nvphsd.conf
 LOCAL_ODM_MODULE           := true
 include $(BUILD_PREBUILT)

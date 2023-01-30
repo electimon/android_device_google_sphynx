@@ -26,67 +26,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE        := audio_policy_configuration.xml
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
-ifeq ($(PRODUCT_IS_ATV),true)
-ifeq ($(TARGET_TEGRA_DOLBY),true)
-LOCAL_SRC_FILES     := audio_policy_configuration_nv_tv.xml
-else
-LOCAL_SRC_FILES     := audio_policy_configuration_nv_tv_nodolby.xml
-endif
-else
-ifeq ($(TARGET_TEGRA_DOLBY),true)
-LOCAL_SRC_FILES     := audio_policy_configuration_nv.xml
-else
-LOCAL_SRC_FILES     := audio_policy_configuration_nv_nodolby.xml
-endif
-endif
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := dragon_nvaudio_conf.xml
-LOCAL_MODULE_TAGS   := optional
-LOCAL_MODULE_CLASS  := ETC
-LOCAL_SRC_FILES     := dragon_nvaudio_conf.xml
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := icosa_nvaudio_conf.xml
-LOCAL_MODULE_TAGS   := optional
-LOCAL_MODULE_CLASS  := ETC
-LOCAL_SRC_FILES     := icosa_nvaudio_conf.xml
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := icosa_emmc_nvaudio_conf.xml
-LOCAL_MODULE_TAGS   := optional
-LOCAL_MODULE_CLASS  := ETC
-LOCAL_SRC_FILES     := icosa_nvaudio_conf.xml
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := loki_e_base_nvaudio_conf.xml
-LOCAL_MODULE_TAGS   := optional
-LOCAL_MODULE_CLASS  := ETC
-LOCAL_SRC_FILES     := loki_nvaudio_conf.xml
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := loki_e_lte_nvaudio_conf.xml
-LOCAL_MODULE_TAGS   := optional
-LOCAL_MODULE_CLASS  := ETC
-LOCAL_SRC_FILES     := loki_nvaudio_conf.xml
-LOCAL_VENDOR_MODULE := true
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE        := loki_e_wifi_nvaudio_conf.xml
-LOCAL_MODULE_TAGS   := optional
-LOCAL_MODULE_CLASS  := ETC
-LOCAL_SRC_FILES     := loki_nvaudio_conf.xml
+LOCAL_SRC_FILES     := audio_policy_configuration.xml
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
@@ -110,11 +50,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE        := media_codecs.xml
 LOCAL_MODULE_TAGS   := optional
 LOCAL_MODULE_CLASS  := ETC
-ifneq (,$(findstring nvmm,$(TARGET_TEGRA_OMX)))
 LOCAL_SRC_FILES     := media_codecs.xml
-else
-LOCAL_SRC_FILES     := media_codecs_sw.xml
-endif
 LOCAL_ODM_MODULE    := true
 include $(BUILD_PREBUILT)
 

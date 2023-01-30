@@ -37,28 +37,12 @@
    "target_path": "hardware/nvidia/light"
  },
  {
-   "repository": "android_hardware_nvidia_platform_t210_foster",
-   "target_path": "hardware/nvidia/platform/t210/foster"
- },
- {
-   "repository": "android_hardware_nvidia_platform_t210_jetson",
-   "target_path": "hardware/nvidia/platform/t210/jetson"
- },
- {
-   "repository": "android_hardware_nvidia_platform_t210b01_darcy",
-   "target_path": "hardware/nvidia/platform/t210b01/darcy"
- },
- {
-   "repository": "android_hardware_nvidia_platform_t210b01_sif",
-   "target_path": "hardware/nvidia/platform/t210b01/sif"
+   "repository": "android_hardware_nvidia_platform_t210_smaug",
+   "target_path": "hardware/nvidia/platform/t210/smaug"
  },
  {
    "repository": "android_hardware_nvidia_power",
    "target_path": "hardware/nvidia/power"
- },
- {
-   "repository": "android_hardware_nvidia_thermal",
-   "target_path": "hardware/nvidia/thermal"
  },
  {
    "repository": "android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-gnu-9.3",
